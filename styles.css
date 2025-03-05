@@ -509,6 +509,31 @@ form button:hover {
     cursor: pointer;
 }
 
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Reducir el padding del formulario en pantallas pequeñas */
+    form {
+        padding: 20px;
+    }
+
+    /* Reducir el tamaño de los campos para mayor comodidad en móviles */
+    form input,
+    form textarea {
+        padding: 10px;
+    }
+
+    /* Ajustar el tamaño del botón */
+    form button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Ajustar el tamaño del mensaje de confirmación */
+    #confirmacion {
+        font-size: 14px;
+    }
+}
+
 /* Diseño y estilo de los servicios */
 .servicios-container {
     display: flex;
