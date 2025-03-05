@@ -460,7 +460,7 @@ form textarea:focus {
 
 /* Botón de envío mejorado */
 form button {
-    width: 105%;
+    width: 100%;
     padding: 14px;
     background: linear-gradient(45deg, #f0a500, #e08900);
     border: none;
@@ -510,7 +510,6 @@ form button:hover {
     cursor: pointer;
 }
 
-/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     /* Reducir el padding del formulario en pantallas pequeñas */
     form {
@@ -520,13 +519,15 @@ form button:hover {
     /* Reducir el tamaño de los campos para mayor comodidad en móviles */
     form input,
     form textarea {
-        padding: 20px;
+        padding: 10px;
+        width: 100%; /* Asegura que los campos ocupen todo el ancho disponible */
     }
 
     /* Ajustar el tamaño del botón */
     form button {
         font-size: 16px;
         padding: 12px;
+        width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
     }
 
     /* Ajustar el tamaño del mensaje de confirmación */
@@ -534,6 +535,8 @@ form button:hover {
         font-size: 14px;
     }
 }
+
+
 
 
 /* Diseño y estilo de los servicios */
