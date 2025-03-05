@@ -460,7 +460,7 @@ form textarea:focus {
 
 /* Botón de envío mejorado */
 form button {
-    width: 100%;
+    width: 105%;
     padding: 14px;
     background: linear-gradient(45deg, #f0a500, #e08900);
     border: none;
@@ -520,7 +520,7 @@ form button:hover {
     /* Reducir el tamaño de los campos para mayor comodidad en móviles */
     form input,
     form textarea {
-        padding: 10px;
+        padding: 20px;
     }
 
     /* Ajustar el tamaño del botón */
