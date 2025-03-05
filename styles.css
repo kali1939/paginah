@@ -75,10 +75,9 @@ header h1 {
 /* Estilo de navegación */
 nav {
     width: 100%;
-    /* Asegura que ocupe todo el ancho disponible */
     display: flex;
     justify-content: center;
-    /* Centra los elementos horizontalmente */
+    background-color: #333; /* Fondo oscuro para visibilidad */
 }
 
 nav ul {
@@ -86,13 +85,15 @@ nav ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    /* Usamos flexbox para alinear los elementos del menú */
+    flex-wrap: wrap; /* Permite que los elementos de la lista se ajusten */
+    justify-content: center; /* Alinea los elementos de manera centralizada */
 }
 
 nav ul li {
     margin: 0 15px;
 }
 
+/* Estilo para los enlaces */
 nav ul li a {
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -104,6 +105,24 @@ nav ul li a {
 nav ul li a:hover {
     color: #10d3e9;
 }
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        align-items: center; /* Centra los elementos en la columna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaciado entre los elementos en vertical */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Tamaño de fuente más grande para mejor legibilidad */
+        padding: 10px 20px; /* Añadir algo de espacio alrededor del texto */
+    }
+}
+
 
 
 
